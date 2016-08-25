@@ -5,6 +5,6 @@
     android:layout_height="match_parent"
     android:scaleType="centerCrop"
     android:src="@mipmap/splash"
-    tools:context=".SplashScreen" >
+    tools:context="com.tecif.myfav.SplashScreen" >
 
 </ImageView>
