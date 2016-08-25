@@ -15,7 +15,7 @@ import io.fabric.sdk.android.Fabric;
 public class SplashScreen extends Activity {
 
 	// how long until we go to the next activity
-	protected int _splashTime = 2000;
+	protected int _splashTime = 4000;
 
 	private Thread splashTread;
 	private boolean isAllShoppingsIntetn = false;
