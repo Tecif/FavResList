@@ -1,5 +1,7 @@
 package com.tecif.myfav;
 
+import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.design.widget.FloatingActionButton;
@@ -20,15 +22,16 @@ import com.firebase.client.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
     private List<Item> items;
     private RecyclerView rv;
+    ProgressDialog progress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         Firebase.setAndroidContext(this);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -38,23 +41,23 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(MainActivity.this, AddActivity.class);
+                startActivity(intent);
             }
         });
+
         if (android.os.Build.VERSION.SDK_INT > 9) {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
         }
 
         rv = (RecyclerView) findViewById(R.id.itemsList);
-
+        progressDialog(getString(R.string.cargando),getString(R.string.cargando_datos));
         LinearLayoutManager llm = new LinearLayoutManager(this);
         rv.setLayoutManager(llm);
         rv.setHasFixedSize(true);
 
         Firebase myFirebaseRef = new Firebase("https://myfav-1a498.firebaseio.com/Restaurantes/Tecif");
-
         myFirebaseRef.addListenerForSingleValueEvent(new ValueEventListener() {
                                                          @Override
                                                          public void onDataChange(DataSnapshot snapshot) {
@@ -65,25 +68,31 @@ public class MainActivity extends AppCompatActivity {
                                                                                  child.child("titulo").getValue().toString(),
                                                                                  child.child("descripcion").getValue().toString(),
                                                                                  child.child("urlPhoto").getValue().toString(),
-                                                                                 Integer.valueOf(child.child("rank").getValue().toString())));
-
+                                                                                 Float.parseFloat(child.child("rank").getValue().toString())));
                                                              }
                                                              initializeAdapter();
-
                                                          }
 
                                                          @Override
                                                          public void onCancelled(FirebaseError firebaseError) {
-
+                                                             progress.dismiss();
                                                          }
+
                                                      }
         );
     }
 
+    public void progressDialog(String titulo, String desc){
+        progress = new ProgressDialog(this);
+        progress.setTitle(titulo);
+        progress.setMessage(desc);
+        progress.show();
+    }
 
     private void initializeAdapter() {
         Adapter adapter = new Adapter(items);
         rv.setAdapter(adapter);
+        progress.dismiss();
     }
 
     @Override
