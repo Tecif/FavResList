@@ -110,7 +110,8 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_acerca) {
+            Snackbar.make(this.findViewById(android.R.id.content), "Desarrollado por Jorge Erick Fabián Villegas", Snackbar.LENGTH_LONG).setAction("Action", null).show();
             return true;
         }
         return super.onOptionsItemSelected(item);
