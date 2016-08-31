@@ -1,5 +1,8 @@
 package com.tecif.myfav;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,6 +12,9 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.itemViewHolder> {
@@ -32,7 +38,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.itemViewHolder> {
     }
 
     List<Item> items;
-
     Adapter(List<Item> items){
         this.items = items;
     }
@@ -51,9 +56,25 @@ public class Adapter extends RecyclerView.Adapter<Adapter.itemViewHolder> {
 
     @Override
     public void onBindViewHolder(itemViewHolder itemViewHolder, int i) {
+        URL url = null;
+        Bitmap bmp=null;
+        if(items.get(i).photo!=null &&items.get(i).photo!="") {
+            try {
+                url = new URL(items.get(i).photo);
+                bmp = BitmapFactory.decodeStream(url.openConnection().getInputStream());
+                itemViewHolder.itemPhoto.setImageBitmap(bmp);
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
         itemViewHolder.itemTitulo.setText(items.get(i).titulo);
         itemViewHolder.itemDescripcion.setText(items.get(i).descripcion);
-        itemViewHolder.itemPhoto.setImageResource(items.get(i).photoId);
+
+
+
         itemViewHolder.itemRank.setRating(items.get(i).rank);
     }
 

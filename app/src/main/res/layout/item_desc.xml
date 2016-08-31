@@ -11,10 +11,12 @@
 
         <ImageView
             android:id="@+id/item_photo"
-            android:layout_width="wrap_content"
+            android:layout_width="100sp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
             android:layout_marginRight="16dp" />
 
         <TextView

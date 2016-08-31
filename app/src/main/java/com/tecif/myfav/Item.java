@@ -4,12 +4,12 @@ class Item {
     String titulo;
     String descripcion;
     float rank;
-    int photoId;
+    String photo;
 
-    Item(String titulo, String descripcion, int photoId, float rank) {
+    Item(String titulo, String descripcion, String photo, float rank) {
         this.titulo = titulo;
         this.descripcion = descripcion;
-        this.photoId = photoId;
+        this.photo = photo;
         this.rank = rank;
     }
 }
