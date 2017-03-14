@@ -1,8 +1,33 @@
 [![mm_header.jpg](https://s16.postimg.org/674mqlohx/mm_header.jpg)](https://postimg.org/image/dzvaikugx/)
 
 # android-admob Module
+Android app example integration with mobile app monetization with [Admob](https://www.google.com/admob/)
+
+## Dependencies
+[Firebase ads](https://codelabs.developers.google.com/codelabs/firebase-android/#13)  is a mobile platform that helps you quickly develop high-quality apps, grow an engaged user base, and earn more money.
+[Butter Knife](http://jakewharton.github.io/butterknife/) Field and method binding for Android views which uses annotation processing to generate boilerplate code for you.
+```swift
+Gradle
+//Butterknife Field and method binding for Android views which uses annotation processing to generate boilerplate code for you. (Not necessary)
+compile 'com.jakewharton:butterknife:8.5.1'
+annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+// For Firebase 
+compile 'com.google.firebase:firebase-ads:10.2.0'
+```
+
+### Plugins
+This example use extended with the following plugins. Instructions on how to use them in your own application are linked below.
+ 
+| Plugin | README | DESCRIPTION
+| ------ | ------ | ------ |
+| ButterKnifeZelezny |[butterknife-zelezny/]( https://github.com/avast/android-butterknife-zelezny/)  | Simple plug-in for Android Studio/IDEA that allows one-click creation of Butterknife view injections.
 
 
+
+## License
+
+This project is is available under the MIT license. See the LICENSE file for more info. Attribution by linking to the [project page](https://github.com/RomeRock/ios-calculator) is appreciated.
 
 
 <div>
