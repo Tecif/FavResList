@@ -5,6 +5,7 @@ Android app example integration with mobile app monetization with [Admob](https:
 
 ## Dependencies
 [Firebase ads](https://codelabs.developers.google.com/codelabs/firebase-android/#13)  is a mobile platform that helps you quickly develop high-quality apps, grow an engaged user base, and earn more money.
+
 [Butter Knife](http://jakewharton.github.io/butterknife/) Field and method binding for Android views which uses annotation processing to generate boilerplate code for you.
 ```swift
 Gradle
