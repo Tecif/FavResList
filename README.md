@@ -3,7 +3,9 @@
 # android-admob Module
 Android app example integration with mobile app monetization with [Admob](https://www.google.com/admob/) using simple banner and interstitial (full-screen ads that cover the interface of their host app).
 
-[![interstitial.png](https://s25.postimg.org/oa7t033sv/interstitial.png)](https://firebase.google.com/docs/admob/android/interstitial)
+[![Simple banner](https://s25.postimg.org/9fj7lwu7z/simple_Banner.png)](https://firebase.google.com/docs/admob/android/banner)
+
+[![Interstitial](https://s25.postimg.org/oa7t033sv/interstitial.png)](https://firebase.google.com/docs/admob/android/interstitial)
 
 ## Dependencies
 [Firebase ads](https://codelabs.developers.google.com/codelabs/firebase-android/#13)  is a mobile platform that helps you quickly develop high-quality apps, grow an engaged user base, and earn more money.
