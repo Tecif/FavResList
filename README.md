@@ -3,10 +3,11 @@
 # android-admob
 Android app example integration with mobile app monetization with [Admob](https://www.google.com/admob/) using simple banner and interstitial (full-screen ads that cover the interface of their host app).
 
-[![Simple banner](https://s25.postimg.org/831ik0wsf/simple_Banner.jpg)](https://firebase.google.com/docs/admob/android/banner)  [![Interstitial](https://s25.postimg.org/dfqcy5kov/interstitial.jpg)](https://firebase.google.com/docs/admob/android/interstitial)
+[![Simple banner](https://s25.postimg.org/x09heoanz/simple_Banner.jpg)](https://firebase.google.com/docs/admob/android/banner)  [![Interstitial](https://s25.postimg.org/49cnom4u7/interstitial.jpg)](https://firebase.google.com/docs/admob/android/interstitial)
 
 ## Dependencies
 [Firebase ads](https://codelabs.developers.google.com/codelabs/firebase-android/#13)  is a mobile platform that helps you quickly develop high-quality apps, grow an engaged user base, and earn more money.
+
 [Butter Knife](http://jakewharton.github.io/butterknife/) Field and method binding for Android views which uses annotation processing to generate boilerplate code for you.
 ```swift
 Gradle
