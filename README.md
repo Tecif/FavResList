@@ -1,6 +1,6 @@
 [![mm_header.jpg](https://s16.postimg.org/674mqlohx/mm_header.jpg)](https://postimg.org/image/dzvaikugx/)
 
-# android-admob Module
+# android-admob 
 Android app example integration with mobile app monetization with [Admob](https://www.google.com/admob/)
 
 ## Dependencies
@@ -27,7 +27,7 @@ This example use extended with the following plugins. Instructions on how to use
 
 ## License
 
-This project is is available under the MIT license. See the LICENSE file for more info. Attribution by linking to the [project page](https://github.com/RomeRock/ios-calculator) is appreciated.
+This project is is available under the MIT license. See the LICENSE file for more info. Attribution by linking to the [project page](https://github.com/RomeRock/android-admob) is appreciated.
 
 ## Follow us!
 
