@@ -1,6 +1,9 @@
 # FavResList
 My Favorite Restaurants
+
 <div class="footerseccions">
+
+<div style="color:#red;">TEST</div>
             <div id="titFooter">Siguenos:</div><br><br>
             <a target="_blank" href="http://twitter.com/tecif"><img src="http://tecif.com/img/footerTwitter.png"></a>
             <a target="_blank" href="http://www.facebook.com/TECIFSC"><img src="http://tecif.com/img/footerFacebook.png"></a>
