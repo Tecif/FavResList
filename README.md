@@ -1,11 +1,12 @@
 [![mm_header.jpg](https://s16.postimg.org/674mqlohx/mm_header.jpg)](https://postimg.org/image/dzvaikugx/)
 
-# android-admob 
-Android app example integration with mobile app monetization with [Admob](https://www.google.com/admob/)
+# android-admob Module
+Android app example integration with mobile app monetization with [Admob](https://www.google.com/admob/) using simple banner and interstitial (full-screen ads that cover the interface of their host app).
+
+[![interstitial.png](https://s25.postimg.org/oa7t033sv/interstitial.png)](https://firebase.google.com/docs/admob/android/interstitial)
 
 ## Dependencies
 [Firebase ads](https://codelabs.developers.google.com/codelabs/firebase-android/#13)  is a mobile platform that helps you quickly develop high-quality apps, grow an engaged user base, and earn more money.
-
 [Butter Knife](http://jakewharton.github.io/butterknife/) Field and method binding for Android views which uses annotation processing to generate boilerplate code for you.
 ```swift
 Gradle
@@ -25,12 +26,18 @@ This example use extended with the following plugins. Instructions on how to use
 | ButterKnifeZelezny |[butterknife-zelezny/]( https://github.com/avast/android-butterknife-zelezny/)  | Simple plug-in for Android Studio/IDEA that allows one-click creation of Butterknife view injections.
 
 
+## Installation and configuration
+- Clone the project
+- Add unit_id for the banner and the interstitial  in your string.xml file
+```swift
+    <string name="banner_ad_unit_id">ca-app-pub-XXXXXXXXXXXXXXXX/XXXXXXXXXX</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-XXXXXXXXXXXXXXXX/XXXXXXXXXX</string>
+```
 
 ## License
 
-This project is is available under the MIT license. See the LICENSE file for more info. Attribution by linking to the [project page](https://github.com/RomeRock/android-admob) is appreciated.
+This project is is available under the MIT license. See the LICENSE file for more info. Attribution by linking to the [project page](https://github.com/RomeRock/ios-calculator) is appreciated.
 
-## Follow us!
 
 <div>
 <a href="http://romerock.com"> <img style="max-width: 100%; margin:7" src="https://avatars3.githubusercontent.com/u/23345883?v=3&s=200=true" alt="Google Play" height="50px" /> </a>
