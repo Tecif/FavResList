@@ -3,9 +3,6 @@
 # android-admob Module
 
 
-## License
-
-This project is is available under the MIT license. See the LICENSE file for more info. Attribution by linking to the [project page](https://github.com/RomeRock/ios-calculator) is appreciated.
 
 
 <div>
