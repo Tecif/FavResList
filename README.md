@@ -29,6 +29,7 @@ This example use extended with the following plugins. Instructions on how to use
 
 This project is is available under the MIT license. See the LICENSE file for more info. Attribution by linking to the [project page](https://github.com/RomeRock/ios-calculator) is appreciated.
 
+## Follow us!
 
 <div>
 <a href="http://romerock.com"> <img style="max-width: 100%; margin:7" src="https://avatars3.githubusercontent.com/u/23345883?v=3&s=200=true" alt="Google Play" height="50px" /> </a>
