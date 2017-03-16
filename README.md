@@ -34,6 +34,7 @@ This example use extended with the following plugins. Instructions on how to use
     <string name="banner_ad_unit_id">ca-app-pub-XXXXXXXXXXXXXXXX/XXXXXXXXXX</string>
     <string name="interstitial_ad_unit_id">ca-app-pub-XXXXXXXXXXXXXXXX/XXXXXXXXXX</string>
 ```
+[![specialThemes.gif](https://s25.postimg.org/v122eqv3z/special_Themes.gif)](https://postimg.org/image/a45ua2x2z/)
 
 ## License
 
