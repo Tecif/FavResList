@@ -41,11 +41,17 @@ When change schema  with  **setTheme(getThemePreferences(getApplication()));**  
         <item name="windowNoTitle">true</item>
     </style>
 ```
+**getThemePreferences** is afunction to get the color saved in Preferences file that return int value of the theme resources
 
+The module simulates the pro version to unlock other themes to use in the app.
+
+[![specialThemes.gif](https://s25.postimg.org/ut1kfrdvj/special_Themes.gif)](https://postimg.org/image/q75g7escb/)
+
+There is an indicator if the pro version is active or deactivated. If activated it, we can use all the themes for the application and at any time we can return to the initial values
 
 ## License
 
-This project is is available under the Apache License, Version 2.0 e. See the LICENSE file for more info. Attribution by linking to the [project page](https://github.com/RomeRock/ios-calculator) is appreciated.
+This project is is available under the MIT License, Version 2.0 e. See the LICENSE file for more info. Attribution by linking to the [project page](https://github.com/RomeRock/ios-calculator) is appreciated.
 
 
 <div>
