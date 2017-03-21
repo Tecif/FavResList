@@ -1,13 +1,8 @@
 [![mm_header.jpg](https://s16.postimg.org/674mqlohx/mm_header.jpg)](https://postimg.org/image/dzvaikugx/)
 
-# android-admob
-Android app example integration with mobile app monetization with [Admob](https://www.google.com/admob/) using simple banner and interstitial (full-screen ads that cover the interface of their host app).
-
-[![Simple banner](https://s25.postimg.org/x09heoanz/simple_Banner.jpg)](https://firebase.google.com/docs/admob/android/banner)  [![Interstitial](https://s25.postimg.org/49cnom4u7/interstitial.jpg)](https://firebase.google.com/docs/admob/android/interstitial)
-
+# android-colortheme
+Android app example integration for use diferent themes in your app. Free themes and theme for full version. 
 ## Dependencies
-[Firebase ads](https://codelabs.developers.google.com/codelabs/firebase-android/#13)  is a mobile platform that helps you quickly develop high-quality apps, grow an engaged user base, and earn more money.
-
 [Butter Knife](http://jakewharton.github.io/butterknife/) Field and method binding for Android views which uses annotation processing to generate boilerplate code for you.
 ```swift
 Gradle
@@ -15,8 +10,6 @@ Gradle
 compile 'com.jakewharton:butterknife:8.5.1'
 annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 
-// For Firebase 
-compile 'com.google.firebase:firebase-ads:10.2.0'
 ```
 
 ### Plugins
@@ -29,12 +22,26 @@ This example use extended with the following plugins. Instructions on how to use
 
 ## Installation and configuration
 - Clone the project
-- Add unit_id for the banner and the interstitial  in your string.xml file
+- Change color or add more schemas  
 ```swift
-    <string name="banner_ad_unit_id">ca-app-pub-XXXXXXXXXXXXXXXX/XXXXXXXXXX</string>
-    <string name="interstitial_ad_unit_id">ca-app-pub-XXXXXXXXXXXXXXXX/XXXXXXXXXX</string>
+// color.xml file
+<color name="colorPrimary">#17B0EF</color>
+<color name="colorPrimaryDark">#1976d2</color>
+<color name="colorAccent">#0288D1</color>
 ```
-[![specialThemes.gif](https://s25.postimg.org/v122eqv3z/special_Themes.gif)](https://postimg.org/image/a45ua2x2z/)
+For each schema for use, have colorPrimary, colorPrimaryDark and colorAccent in your color.xml file.
+
+When change schema  with  **setTheme(getThemePreferences(getApplication()));**  you set the three color. Example for Orange theme the style will be:
+```swift
+<style name="Orange" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryOrange</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkOrange</item>
+        <item name="colorAccent">@color/colorAccentOrange</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+```
+
 
 ## License
 
@@ -50,3 +57,4 @@ This project is is available under the Apache License, Version 2.0 e. See the LI
 <a href="https://github.com/RomeRock"> <img style="max-width: 100%; margin:7" src="https://s18.postimg.org/wpdcxlt0p/github_icon.png=true" alt="Google Play" height="50px" /></a>
 <a href="https://www.youtube.com/channel/UCcSLNuTYC7qJhOKQ4CpseRA"> <img style="max-width: 100%; margin:7" src="https://s18.postimg.org/w4ybuwzs9/youtube_icon.png=true" alt="Google Play" height="50px" /></a>
 </div>
+
