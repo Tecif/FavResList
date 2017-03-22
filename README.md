@@ -1,7 +1,10 @@
 [![mm_header.jpg](https://s16.postimg.org/674mqlohx/mm_header.jpg)](https://postimg.org/image/dzvaikugx/)
 
-# android-colortheme
-Android app example integration for use diferent themes in your app. Free themes and theme for full version. 
+# android-currencylocation
+
+Android app example integration for detect current location (country and language), or you can select currency use if not detected.  The example shows the currency name for devices above Android KitKat.
+
+[![autodetect.png](https://s25.postimg.org/7u5d3rbb3/autodetect.png)](https://postimg.org/image/4natk4quz/) [![selectCurrency.png](https://s25.postimg.org/9agvlwe7z/select_Currency.png)](https://postimg.org/image/4okrdjsor/)
 ## Dependencies
 [Butter Knife](http://jakewharton.github.io/butterknife/) Field and method binding for Android views which uses annotation processing to generate boilerplate code for you.
 ```swift
